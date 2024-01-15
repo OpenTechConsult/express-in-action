@@ -1,0 +1,18 @@
+{
+  "name": "chap_03",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Agboka Atsou Elom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenTechConsult/express-in-action.git"
+  },
+  "private": true
+}
