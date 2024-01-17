@@ -6,7 +6,6 @@ var logger = require('morgan');
 
 const EVIL_IP = '123.45.67.89';
 
-// instantiate an express app
 const app = express();
 
 // log all incoming request
@@ -16,6 +15,7 @@ app.use(logger('short'));
 const publicPath = path.resolve(__dirname, 'public');
 app.use(express.static(publicPath));
 
+// blacklist an IP address
 app.use(function (request, response, next) {
     if (request.ip === EVIL_IP) {
         response.status(401).send('Not allowed');
